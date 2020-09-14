@@ -115,8 +115,6 @@ def apply_text_tank(file_name, title="a document"):
     print()
 
 def main():
-    apply_text_tank("Cinderalla.txt", "Cinderalla")
-    apply_text_tank("Beauty_and_the_Beast.txt", "Beauty and the Beast")
     apply_text_tank("Rapunzel.txt", "Rapunzel")
 
 if __name__ == "__main__":
