@@ -17,13 +17,11 @@ def __extract_nodes(matrix):
 
 def __make_square(matrix, keys, default=0.0):
     matrix = matrix.copy()
-    
     def insert_missing_columns(matrix):
         for key in keys:
             if not key in matrix:
                 matrix[key] = pandas.Series(default, index=matrix.index)
         return matrix
-
     matrix = insert_missing_columns(matrix) # insert missing columns
     matrix = insert_missing_columns(matrix.T).T # insert missing rows
 

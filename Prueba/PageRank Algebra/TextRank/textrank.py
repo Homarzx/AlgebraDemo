@@ -77,7 +77,7 @@ def textrank(document, window_size=2, rsp=0.15, relevant_pos_tags=["NN", "ADJ"])
 
     # Apply PageRank to the weighted graph:
     word_probabilities = pagerank.power_iteration(edge_weights, rsp=rsp)
-    word_probabilities.sort_values(ascending=False)
+    word_probabilities.sort_values(ascending=True)
 
     return word_probabilities
 
